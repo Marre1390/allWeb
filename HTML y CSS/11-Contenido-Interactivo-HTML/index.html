@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interactividad y contenido embebido</title>
+</head>
+<body>
+    <h1>Contenido interactivo</h1>
+    
+    <details>
+        <summary>HTML</summary>
+        <p>Lenguaje de marcado de hipertexto</p>
+        <p>Se creo en el 1989</p>
+    </details>
+
+    <button id="button">Abrir modal</button>
+
+    <dialog id="modal">
+        <h2>Curso HTML5 desde cero</h2>
+        <p>Precio: $5.00</p>
+        <p>Profesor: Álvaro Felipe</p>
+        <button id="cerrar-modal">Cerrar</button>
+    </dialog>
+
+    <h1>Contenido embebido</h1>
+
+    <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/CHy9srIvCa4"
+    frameborder="0" allow="autoplay; encrypted-media"
+    allowfullscreen></iframe>
+
+    
+
+    <script>
+        const modal = document.getElementById('modal'),
+              button = document.getElementById('button');
+        const cerrar_modal = document.getElementById('cerrar-modal');
+
+            button.addEventListener('click', () => {
+                modal.setAttribute('open', 'true');
+            });
+
+            cerrar_modal.addEventListener('click', ()=>{
+                modal.removeAttribute('open');
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" type="img/png" href="../img/logo-ico.png">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/javascript" href="../js/bootstrap.min.js">
+	<title>Cambio de Carrera</title>
+</head>
+<body id="body-principal" background="../img/fondo2.png" class="view">
+	<div class="container"><img src="../img/banner-superior.jpg" style="width: 100%;"></div>
+	<div class="container" style="background-color: rgb(255,255,255,0.8); border-radius: 20px;border: 4px solid; border-color: rgb(0,15,255,0.6);">
+
+		<form method="POST">
+		<table class="table table-striped table-hover" style="width: 700px;">
+			<thead>
+                <th><h1>Cambio de carrera</h1></th>
+                <th>Numero de cuenta: <input type="text" id="cuenta" disabled></th>            
+            </thead>
+			<tr>
+				<td><label>Carrera a la que desea cambiarse:</label></td>
+				<td>
+                    <select name="slc_universidades[]">
+                        <option value-="1">1</option>
+                        <option value-="2">2</option>
+                        <option value-="3">3</option>
+                    </select>
+                </td>
+			</tr>
+			<tr>
+				<td><label>¿Porque desea cambiarse?:</label></td>
+				<td><textarea placeholder="Escriba aqui..." name="txtarea_razon" id="textarea_razon" style="width: 400px;" ></textarea></td>
+			</tr>
+            <tr>
+				<td><label>¿Han cumplido todos los requisitos para el cambio de carrera?:</label></td>
+				<td>
+                    <label><input type="radio" name="btn_requisito" id="btn-radio-requisito">Si</label>
+                    <h3>Nota: Sino a cumplido los requisitos, no puede realizar el cambio de carrrera.</h3>
+                </td>
+			</tr>			
+			<tr>
+				<td colspan="2">
+					<button type="submit" class="btn btn-primary">Enviar solicitud</button>
+					<button type="submit" class="btn btn-success">Atras</button>
+				</td>
+			</tr>				
+		</table>
+	</form>
+
+</body>
+</html>

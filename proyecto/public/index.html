@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+  <head>
+  	<meta charset="utf-8">
+    <title>Pagina principal DIPP</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/javascript" href="js/bootstrap.min.js">
+
+    <link rel="icon" type="image/png" href="img/logo-ico.png">
+  </head>
+  <body id="body-principal" background="img/fondo2.png" class="view">
+	<div class="header">
+
+		<form>
+		<div class="container"><img src="img/banner-superior.jpg" style="width: 100%;"></div>
+		<div class="contenedor">
+			<div class="pestanias">
+				<ul class="nav">					
+					<li style="width: 20%;"><a href="index.html">Inicio</a></li>
+					<li style="width: 20%;"><a href="###">Primer ingreso</a></li>
+
+
+
+					<li style="width: 20%;"><a>Prepago</a>
+						<ul>
+							<li><input type="button" value="Estudiantes" data-toggle="modal" data-target="#myModalEstudiante"></li>
+							<li><input type="button" value="Profesores" data-toggle="modal" data-target="#myModalEmpleado"></li>
+							<li><input type="button" value="Jefes de departamento" data-toggle="modal" data-target="#myModalEmpleado"></li>
+							<li><input type="button" value="Coordinadores de carrera" data-toggle="modal" data-target="#myModalEmpleado"></li>
+							<li><input type="button" value="Programas especiales"></li>
+							<li><input type="button" value="Suficiencias"></li>
+							<li><input type="button" value="Coordinador asignatura" data-toggle="modal" data-target="#myModalEmpleado"></li>
+						</ul>
+					</li>
+					<li style="width: 20%;"><a>Postpago</a>
+						<ul>
+							<li><a href="###">Solicitudes de ingreso</a></li>
+							<li><a href="###">Oferta academica</a></li>
+							<li><a href="###">Servicio al estudiante</a></li>
+							<li><a href="###">Coordinacion de postgrados</a></li>
+							<li><a href="###">Registro de calificaciones</a></li>
+						</ul>
+					</li>
+					<li style="width: 20%;"><a>Administracion</a>
+						<ul>
+							<li><a href="###">Direccion academica</a></li>
+							<li><a href="###" data-toggle="modal" data-target="#myModalEmpleado">Comisionado universitario</a></li>
+							<li><a href="###">Tesoreria</a></li>
+							<li><a href="###">Decanos</a></li>
+							<li><a href="###">DIPP</a></li>
+							<li><a href="###">SEAPI</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		</form>
+	</div>
+
+
+	<!--Ventanas modales-->
+	<!-- Modal -->
+	<div id="myModalEstudiante" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Servicios al estudiante</h4>
+	      </div>
+	      <div class="modal-body" style="text-align: center;">
+
+
+	        <form class="form-signin" action="../public-estudiante/index-estudiante.html">
+                <span id="reauth-email" class="reauth-email"></span>
+                <h3><p class="input_title">Numero de cuenta</p></h3>
+                <input type="text" id="cuenta" class="login_box" placeholder="Cuenta" value="20091011831" required>
+                <h3><p class="input_title">Contraseña</p></h3>
+                <input type="password" id="contrasenia-estudiante" class="login_box" value="asd.456" placeholder="******" required>
+                <div id="remember" class="checkbox">
+                    <label>
+                        <p class="input_title"><a href="###">He olvidado mi contraseña.</a></p>
+                    </label>
+                </div>
+                <button class="btn btn-lg btn-primary" type="submit" id="btn-login-estudiante">Entrar</button>
+            </form>
+
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<div id="myModalEmpleado" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Modal para empleados</h4>
+	      </div>
+	      <div class="modal-body" style="text-align: center;">
+	        <form class="form-signin">
+                <span id="reauth-email" class="reauth-email"></span>
+                <h3><p class="input_title">Clave de empleado</p></h3>
+                <input type="text" id="clave_empleado" class="login_box" placeholder="Clave" required autofocus>
+                <h3><p class="input_title">Contraseña</p></h3>
+                <input type="password" id="contrasena_empleado" class="login_box" placeholder="******" required>
+                <div id="remember" class="checkbox">
+                    <label>
+                        <p class="input_title"><a href="###">He olvidado mi contraseña.</a></p>
+                    </label>
+                </div>
+                <button class="btn btn-lg btn-primary" type="button" id="btn-login-empleado">Entrar</button>
+            </form>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+	
+	<!--Final de las ventanas modales-->
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/controlador.js"></script>
+	<script type="text/javascript" src="js/controlador2.js"></script>
+	<script type="text/javascript" src="js/validaciones.js"></script>
+
+  </body>
+</html>

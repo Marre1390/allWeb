@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image</title>
+</head>
+<body>
+    <!-- svg se perfcto en cualquier pantalla, no se
+        necesita srcset -->
+    <img src="img/icono.svg">
+
+    <!-- con media query -->
+    <picture>
+        <source media="(min-width: 1050px)" srcset="img/animal-animal-photography-canidae-45242.jpg">
+        <source media="(min-width: 625px)" srcset="img/adorable-animal-blur-617278.jpg">
+        <img src="img/pexels-photo-262297.jpeg" alt="Flowers" style="width:auto;">
+    </picture>
+
+</body>
+</html>

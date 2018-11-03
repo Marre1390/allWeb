@@ -1,0 +1,15 @@
+{
+  "name": "refresh",
+  "version": "1.0.0",
+  "description": "Este es un ejemplo de refrescar pagina HTML",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marvin Ramírez",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "gulp": "^3.9.1"
+  }
+}

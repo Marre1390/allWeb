@@ -1,0 +1,11 @@
+:root{
+    --color: #000;
+}
+
+body{
+    background: var(--color);
+}
+h1{
+    background: white;
+    color: var(--color);
+}

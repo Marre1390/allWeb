@@ -1,0 +1,100 @@
+/*Estilos mas comunes*/
+
+/*Cuerpo principal*/
+
+#body-principal{
+	background-color: #010B18;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	background-attachment: fixed;
+}
+
+.contenido{
+	background-color: rgb(255,255,255,0.2);
+}
+
+
+.header{
+	background-color: rgb(255,255,255,0.4);
+	text-align-last: center;
+	margin: 0% 0% 0% 0%;
+	width: 100%;
+}
+
+.contenedor{
+	margin: 0% 20% 0% 20%;
+	width: 100%;
+}
+
+.pestanias{
+	background-color: rgb(0,0,0,0.3);
+	color: white;
+	width: 60%;
+	font-size: large;
+	text-align-last: center;
+	float: left;
+	margin: auto;
+	font-family: Arial, Helvetica;
+}
+
+ul li input{
+	text-align-last: center;
+}
+
+ul ul li input{
+	text-align-last: left;
+	width: 220px;
+}
+
+ul, ol{
+	list-style: none;
+}
+.nav li input{
+	background-color: #000000;
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+}
+
+.nav li input:hover{
+	background-color: #434343;
+}
+
+.nav li:hover > ul{
+	display: block;
+
+}
+
+.nav li ul{
+	display: none;
+	position: absolute;
+}
+
+.nav > li{
+	float: left;
+}
+
+ul li a{
+	text-align-last: center;
+	text-align-last: left;	
+}
+
+.nav li a{
+	background-color: #000000;
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+}
+
+.nav li a:hover{
+	background-color: #434343;
+}
+
+.is-invalid{
+	border: 2px solid red;
+}
+
+.is-valid{
+	border: 2px solid green;
+}
