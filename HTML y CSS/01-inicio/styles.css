@@ -1,3 +1,6 @@
+/*
+    Root se usa para encapsular variables globales
+*/
 :root{
     --color: #000;
 }
